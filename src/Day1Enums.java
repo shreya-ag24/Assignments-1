@@ -7,7 +7,7 @@ enum WeekDays{
     FRIDAY,
     SATURDAY
 }
-public class day1_enums {
+public class Day1Enums {
     public static void main(String[] args) {
         for(WeekDays wd :WeekDays.values()){
             System.out.println(wd);
