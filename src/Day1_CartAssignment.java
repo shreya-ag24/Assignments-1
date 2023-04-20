@@ -28,14 +28,15 @@ public class Day1_CartAssignment {
             arr[0]=10;
             arr[1] = sum;
             arr[2]=(int)(sum-(sum*0.2));
-            return arr;
+
         }
         else {
             arr[0]=1;
             arr[1] = sum;
             arr[2]= sum;
-            return arr;
+
         }
+        return  arr;
     }
 
 }
