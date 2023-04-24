@@ -13,6 +13,16 @@ public class ExceptionHandling {
             System.out.println(e.toString());
             e.printStackTrace();
         }
+
+        try {
+            System.out.println(12/0);
+        }
+        catch (ArithmeticException e){
+            System.out.println(e.getMessage());
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 
 }
