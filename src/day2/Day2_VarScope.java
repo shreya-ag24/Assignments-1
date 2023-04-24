@@ -1,3 +1,5 @@
+package day2;
+
 public class Day2_VarScope {
     int ins = 20;
     int val = 10;

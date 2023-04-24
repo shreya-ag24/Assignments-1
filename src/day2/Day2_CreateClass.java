@@ -1,3 +1,5 @@
+package day2;
+
 public class Day2_CreateClass {
     int a = 10;
 
@@ -13,7 +15,7 @@ public class Day2_CreateClass {
         System.out.println(cc);
 
         try {
-            Class c = Class.forName("Day2_CreateClass");
+            Class c = Class.forName("day2.Day2_CreateClass");
             Day2_CreateClass c1 = (Day2_CreateClass) c.newInstance();
             c1.add();
             System.out.println(c1);

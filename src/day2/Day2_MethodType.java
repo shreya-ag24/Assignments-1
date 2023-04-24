@@ -1,3 +1,5 @@
+package day2;
+
 class Test {
     public static int add(int v1, int v2) {
         int val = v1 + v2;
