@@ -16,5 +16,32 @@ public class FinalBlock {
         finally{
             System.out.println("Clone connection");
         }
+
+        //nested try block
+        try{
+            System.out.println("Nested try block");
+            try{
+                System.out.println("111111");
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            finally{
+                System.out.println("catch block");
+            }
+            System.out.println("Last Statement");
+
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            try{
+                System.out.println("Try block in catch block");
+            }catch (Exception b){
+                b.printStackTrace();
+            }
+            finally{
+                System.out.println("Nested close connection");
+            }
+            System.out.println("fully Last Statement");
+        }
     }
 }
