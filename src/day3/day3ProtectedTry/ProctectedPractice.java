@@ -1,4 +1,4 @@
-package day3ProtectedTry;
+package day3.day3ProtectedTry;
 
 import day3.AccessModifiers;
 
