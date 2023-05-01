@@ -4,27 +4,41 @@ import java.util.*;
 
 public class Generics {
     public static void main(String[] args) {
-        Printer <String> printer = new Printer<>("Wiley Edge");
+        //		Printer<Cat> printer = new Printer(new Cat());
+//		printer.print();
 
 
-//
-//        shout("Hellow ");
-//        shout("hiee");
+//		Printer<Dog> dogPrinter = new Printer(new Dog());
+//		dogPrinter.print();
 
-//        shout("Amount",20000);
 
-        List<Integer>inList = new ArrayList<>();
-        inList.add(3);
-        inList.add(4);
-        printList(inList);
 
+//		ArrayList<Object> cats = new ArrayList<>();
+//		cats.add(new Cat());
+//		cats.add(new Cat());
+//		cats.add(new Dog());
+
+//		shout("hello");
+//		shout("Bring Coffee");
+//		shout("Amount", 60000);
+
+        List<Integer> intList = new ArrayList<>();
+        intList.add(3);
+        printList(intList);
+
+        List<Cat> catList = new ArrayList<>();
+        catList.add(new Cat());
+        printList(catList);
     }
 
-    public static void printList(List<?> myList){
+    private static void printList(List<?> myList) {
         System.out.println(myList);
     }
-    private static <T,V> void shout(T hiee,V val) {
-        System.out.println(hiee+"......!");
-        System.out.println(val+".... !");
+
+    private static <T, V> T shout(T shoutOUt, V valtoBring) {
+        System.out.println(shoutOUt + " ...!!!!");
+        System.out.println(valtoBring + " ...!!!!");
+
+        return shoutOUt;
     }
 }

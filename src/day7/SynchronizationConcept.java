@@ -23,11 +23,26 @@ class Person1 extends Thread{
         st.writeln(5);
     }
 }
+class Person2 extends Thread{
+    Sheet st;
+
+    public Person2(Sheet st) {
+        super();
+        this.st = st;
+    }
+    @Override
+    public void run() {
+        st.writeln(5);
+    }
+}
 public class SynchronizationConcept {
     public static void main(String[] args) {
-        Person1 person1 = new Person1();
-        person1.start();
-        Person1 person2 = new Person1();
-        person2.start();
+        Sheet st = new Sheet();
+
+//        Person1 t1 = new Person1(st);
+        Person2 t2 = new Person2(st);
+
+//        t1.start();
+        t2.start();
     }
 }
