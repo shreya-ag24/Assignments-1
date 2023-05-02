@@ -3,12 +3,12 @@ package day7;
 class SupportClass extends Thread{
 //    @Override
 //   public void run() {
-		if (Thread.currentThread().isDaemon()) {
-			System.out.println("This is a demon");
-		} else {
-			System.out.println("This is not a demon thread");
-		}
-	}
+//		if (Thread.currentThread().isDaemon()) {
+//			System.out.println("This is a demon");
+//		} else {
+//			System.out.println("This is not a demon thread");
+//		}
+//	}
 }
 public class DaemonType {
     public static void main(String[] args) {

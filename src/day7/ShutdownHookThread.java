@@ -18,8 +18,8 @@ public class ShutdownHookThread {
         r.addShutdownHook(new CloseEvent());
 
         for (int i = 0; i < 10; i++) {
-            CloseEvent1 t = new CloseEvent();
-            t.start();
+//            CloseEvent1 t = new CloseEvent();
+//            t.start();
         }
     }
 
